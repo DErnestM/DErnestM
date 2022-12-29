@@ -2,11 +2,11 @@
   --primary-color: rgb(219, 224, 226);
   --secondary-color: azure;
   --header-size: 4rem;
-  --font-size: 1.8rem;
+  --font-general-size: 2.5rem;
   --font-size-footer: 1.2rem;
-  --width: 100vw;
+  /* --width: 100vw; */
   --height-navs: 7vh;
-  --font-general: 'Andika', sans-serif;
+  --font-style: 'Andika', sans-serif;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 html{
-  font-family: var(--font-general);
+  font-family: var(--font-style);
   font-size: 62.5%;
 }
 
@@ -31,24 +31,24 @@ body {
 body {
   background:
   linear-gradient(
-    110deg,
-    hsl(204.38, 34.78%, 18.04%) 0%,
-    hsl(213.49, 30.52%, 19.82%) 12.1%,
-    hsl(224.54, 26.92%, 21.85%) 21.8%,
-    hsl(236.73, 24.07%, 24%) 29.5%,
-    hsl(248.1, 26.17%, 25.31%) 35.6%,
-    hsl(256.05, 29.7%, 26.32%) 40.4%,
-    hsl(261.7, 33%, 27.32%) 44.3%,
-    hsl(265.83, 36.05%, 28.3%) 47.6%,
-    hsl(268.92, 38.85%, 29.24%) 50.9%,
-    hsl(271.3, 41.39%, 30.13%) 54.3%,
-    hsl(273.14, 43.69%, 30.97%) 58.3%,
-    hsl(274.6, 45.75%, 31.75%) 63.3%,
-    hsl(275.76, 47.58%, 32.45%) 69.5%,
-    hsl(276.69, 49.19%, 33.09%) 77.5%,
-    hsl(277.42, 50.57%, 33.64%) 87.5%,
-    hsl(278, 51.72%, 34.12%) 100%
-  );
+        110deg,
+        hsl(204.38, 34.78%, 18.04%) 0%,
+        hsl(207.73, 36.72%, 18.92%) 12.1%,
+        hsl(210.93, 38.77%, 19.98%) 21.8%,
+        hsl(213.73, 40.74%, 21.16%) 29.5%,
+        hsl(216.1, 42.54%, 22.4%) 35.6%,
+        hsl(218.07, 44.15%, 23.68%) 40.4%,
+        hsl(219.69, 45.55%, 24.96%) 44.3%,
+        hsl(221.02, 46.76%, 26.23%) 47.6%,
+        hsl(222.12, 47.79%, 27.47%) 50.9%,
+        hsl(223.03, 48.68%, 28.66%) 54.3%,
+        hsl(223.79, 49.43%, 29.78%) 58.3%,
+        hsl(224.42, 50.07%, 30.83%) 63.3%,
+        hsl(224.94, 50.61%, 31.8%) 69.5%,
+        hsl(225.37, 51.06%, 32.68%) 77.5%,
+        hsl(225.72, 51.43%, 33.45%) 87.5%,
+        hsl(226, 51.72%, 34.12%) 100%
+      );
 };
 
 h1{
@@ -64,7 +64,7 @@ h1 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: var(--font-general-size);
   text-align: center;
   color: var(--secondary-color);
 }
@@ -75,34 +75,60 @@ p {
   justify-content: center;
   margin:auto;
   margin-top: 3vh;
-  /* max-width: 1024px; */
 }
 
-.quote{
-  min-width: 250px;
-  max-width: 47%;
-  height: auto;
-  margin: auto;
-  padding: 1rem;
-  text-align: center;
+.quote__container{
+  min-width: 350px;
+  max-width: 48%;
+  min-height: 40vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin:auto; */
+
+  /* text-align: center; */
 }
 
-.quote p{
-  font-size: var(--font-size);
+.container__paragraph {
+  align-self: center;
+  min-height: 25vh;
+  max-height: 25vh;
+}
+
+.container__paragraph p{
+  font-size: var(--font-general-size);
   margin: 2rem auto 2rem auto;
 }
 
+.container__button {
+  /* align-self: flex-end; */
+  min-height: 10vh;
+  max-height: auto;
+}
+
+.container__img {
+  min-width: 350px;
+  max-width: 48%;
+  min-height: 50vh;
+  text-align: center;
+}
+
+
 img {
-  min-width: 250px;
-  max-width: 47%;
+  /* min-width: 25%; */
+  max-width: 100%;
   height: auto;
+  /* position: relative; */
+  /* object-fit: contain; */
+  /* right: 50px; */
+  border-radius: 0 0rem 15rem ;
 }
 
 
 button {
   padding: 1rem;
-  margin-top: 2rem;
-  /* height: var(--height-navs); */
+  font-size: 60px;
   box-shadow: 3px 4px 5px 0px #e7e7e7b9;
   background-color:transparent;
   border-radius:42px;
