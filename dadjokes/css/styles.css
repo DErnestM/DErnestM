@@ -1,0 +1,133 @@
+:root{
+  --primary-color: rgb(219, 224, 226);
+  --secondary-color: azure;
+  --header-size: 4rem;
+  --font-size: 1.8rem;
+  --font-size-footer: 1.2rem;
+  --width: 100vw;
+  --height-navs: 7vh;
+  --font-general: 'Andika', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+  font-family: var(--font-general);
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
+}
+
+body {
+  background:
+  linear-gradient(
+    110deg,
+    hsl(204.38, 34.78%, 18.04%) 0%,
+    hsl(213.49, 30.52%, 19.82%) 12.1%,
+    hsl(224.54, 26.92%, 21.85%) 21.8%,
+    hsl(236.73, 24.07%, 24%) 29.5%,
+    hsl(248.1, 26.17%, 25.31%) 35.6%,
+    hsl(256.05, 29.7%, 26.32%) 40.4%,
+    hsl(261.7, 33%, 27.32%) 44.3%,
+    hsl(265.83, 36.05%, 28.3%) 47.6%,
+    hsl(268.92, 38.85%, 29.24%) 50.9%,
+    hsl(271.3, 41.39%, 30.13%) 54.3%,
+    hsl(273.14, 43.69%, 30.97%) 58.3%,
+    hsl(274.6, 45.75%, 31.75%) 63.3%,
+    hsl(275.76, 47.58%, 32.45%) 69.5%,
+    hsl(276.69, 49.19%, 33.09%) 77.5%,
+    hsl(277.42, 50.57%, 33.64%) 87.5%,
+    hsl(278, 51.72%, 34.12%) 100%
+  );
+};
+
+h1{
+  color: var(--primary-color);
+}
+
+h1 {
+  padding-top: var(--header-size);
+  min-height: var(--height-navs);
+  color: var(--primary-color);
+  font-size: var(--header-size);
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:auto;
+  margin-top: 3vh;
+  /* max-width: 1024px; */
+}
+
+.quote{
+  min-width: 250px;
+  max-width: 47%;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.quote p{
+  font-size: var(--font-size);
+  margin: 2rem auto 2rem auto;
+}
+
+img {
+  min-width: 250px;
+  max-width: 47%;
+  height: auto;
+}
+
+
+button {
+  padding: 1rem;
+  margin-top: 2rem;
+  /* height: var(--height-navs); */
+  box-shadow: 3px 4px 5px 0px #e7e7e7b9;
+  background-color:transparent;
+  border-radius:42px;
+  border:4px solid var(--secondary-color);
+  color: var(--secondary-color);
+  cursor:pointer;
+  font:var(--font-general);
+  }
+
+  button:hover {
+    text-decoration: underline ;
+  }
+
+  button:active {
+    position:relative;
+    top:2px;
+  }
+
+footer{
+  margin-bottom: 1vh;
+  width: var(--width);
+  height: auto;
+  padding-top: 5vh;
+  /* font-size: var(--font-size-footer); */
+}
+footer p{
+  font-size: var(--font-size-footer);
+}
