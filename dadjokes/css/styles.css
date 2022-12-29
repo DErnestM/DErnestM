@@ -4,7 +4,6 @@
   --header-size: 4rem;
   --font-general-size: 2.5rem;
   --font-size-footer: 1.2rem;
-  /* --width: 100vw; */
   --height-navs: 7vh;
   --font-style: 'Andika', sans-serif;
 }
@@ -23,9 +22,6 @@ html{
 body {
   font-size: 1.6rem;
   height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  min-height: 100vh; */
 }
 
 body {
@@ -53,6 +49,7 @@ body {
 
 h1{
   color: var(--primary-color);
+  padding: 3%;
 }
 
 h1 {
@@ -85,9 +82,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin:auto; */
-
-  /* text-align: center; */
 }
 
 .container__paragraph {
@@ -102,10 +96,11 @@ p {
 }
 
 .container__button {
-  /* align-self: flex-end; */
   min-height: 10vh;
   max-height: auto;
+  font-size: var(--font-general-size);
 }
+
 
 .container__img {
   min-width: 350px;
@@ -116,19 +111,15 @@ p {
 
 
 img {
-  /* min-width: 25%; */
   max-width: 100%;
   height: auto;
-  /* position: relative; */
-  /* object-fit: contain; */
-  /* right: 50px; */
   border-radius: 0 0rem 15rem ;
 }
 
 
 button {
-  padding: 1rem;
-  font-size: 60px;
+  padding: 6%;
+  width: max-content;
   box-shadow: 3px 4px 5px 0px #e7e7e7b9;
   background-color:transparent;
   border-radius:42px;
@@ -139,7 +130,8 @@ button {
   }
 
   button:hover {
-    text-decoration: underline ;
+    border:4px solid #6ff976b9;
+    color: #6ff976b9;
   }
 
   button:active {
@@ -152,8 +144,8 @@ footer{
   width: var(--width);
   height: auto;
   padding-top: 5vh;
-  /* font-size: var(--font-size-footer); */
 }
+
 footer p{
   font-size: var(--font-size-footer);
 }
