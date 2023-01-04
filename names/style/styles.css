@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=IM+Fell+English+SC&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #fafafa;
+  opacity: 0.6;
+  background-size: 42px 42px;
+  background-image:  repeating-linear-gradient(0deg, #9da0c9, #9093cc 1.6px, #f1f1f5 1.6px, #f4f4f9);
+  color: rgba(9, 1, 1, 0.963);
+  font-family: 'IM Fell English SC', serif;
+  font-size: 5vh;
+};
